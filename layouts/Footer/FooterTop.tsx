@@ -81,7 +81,7 @@ export const FooterTop = () => {
             </p>
           </button>
         </form>
-        <h4 className={variants.title}>Мы в соцсетях</h4>
+        <h2 className={variants.title}>Мы в соцсетях</h2>
         <div className="flex items-center space-x-3">
           {socials.map(({ Icon, href, title }, i) => (
             <Link href={href} key={i} target="_blank" title={title}>
