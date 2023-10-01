@@ -62,19 +62,19 @@ export const FooterTop = () => {
         <h2 className="text-sm font-normal text-white">
           Хотите быть в курсе последних новостей и акций?
         </h2>
-        <form className="my-3 flex flex-col items-center justify-center space-y-3 sm:my-6 xl:flex-row xl:justify-between xl:space-x-3 xl:space-y-0">
+        <form className="my-3 flex flex-col items-center justify-center space-y-3 sm:my-6">
           <input
             id="email"
             autoComplete="true"
             type="text"
-            className="w-full flex-1 border border-white bg-transparent px-3 py-2 text-sm text-white outline-none placeholder:text-gray-300 sm:text-base xl:px-5"
+            className="w-full border border-white bg-transparent px-3 py-2 text-sm text-white outline-none placeholder:text-gray-300 sm:text-base"
             placeholder="xasanof17@yandex.ru"
           />
           <button
             type="submit"
             role="button"
             title="Subscribe"
-            className="h-full w-full bg-white py-2 focus:outline-violet-500 xl:px-3 xl:py-0"
+            className="h-full w-full bg-white py-2 focus:outline-violet-500"
           >
             <p className="bg-gradient-to-r from-purple-100 to-indigo-500 bg-clip-text text-sm font-normal sm:text-base">
               Подписаться
