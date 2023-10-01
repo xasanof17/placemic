@@ -2,6 +2,11 @@
   "name": "placemic",
   "version": "0.0.1",
   "private": true,
+  "author": {
+    "email": "xasanof17@gmail.com",
+    "name": "Xasanov Javohir",
+    "url": "https://portfoliowebapp.vercel.app"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
