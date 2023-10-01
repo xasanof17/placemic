@@ -31,6 +31,7 @@ export const HeaderBottom = () => {
               role="img"
               fill
               priority
+              className="object-contain"
             />
           </div>
         </Link>
