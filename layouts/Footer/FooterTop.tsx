@@ -10,7 +10,7 @@ import {
 
 export const FooterTop = () => {
   const variants = {
-    title: "text-base font-medium text-white mb-2",
+    title: "text-lg font-medium text-white mb-2",
     link: "text-sm font-normal text-white duration-300 transition-all underline-offset-2 hover:underline",
   };
   const socials = [
@@ -44,9 +44,9 @@ export const FooterTop = () => {
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4 lg:gap-4">
       {footerLinks.map(({ title, links }, i) => (
         <div key={i} className="flex flex-col">
-          <h3 role="heading" className={variants.title}>
+          <h2 role="heading" className={variants.title}>
             {title}
-          </h3>
+          </h2>
           <ul role="list" className="flex flex-col space-y-1">
             {links.map(({ href, title }, i) => (
               <li role="listitem" key={i}>
@@ -59,9 +59,9 @@ export const FooterTop = () => {
         </div>
       ))}
       <div className="flex flex-col">
-        <h3 className="text-sm font-normal text-white">
+        <h2 className="text-sm font-normal text-white">
           Хотите быть в курсе последних новостей и акций?
-        </h3>
+        </h2>
         <form className="my-3 flex flex-col items-center justify-center space-y-3 sm:my-6 xl:flex-row xl:justify-between xl:space-x-3 xl:space-y-0">
           <input
             id="email"

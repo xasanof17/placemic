@@ -7,7 +7,6 @@ import { HeaderBottomSheet } from "@/layouts/Header/HeaderBottomSheet";
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
   weight: ["300", "400", "500"],
-  display: "auto",
 });
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
