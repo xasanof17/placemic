@@ -3,9 +3,9 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: meta.title.default,
+    name: "Placemic",
     short_name: "Placemic",
-    description: meta.description,
+    description: meta.description!,
     start_url: "/",
     display: "standalone",
     background_color: "#fff",
