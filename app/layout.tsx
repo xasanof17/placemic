@@ -14,8 +14,8 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const metadata: Metadata = {
   title: {
-    template: meta.title.template,
-    default: meta.title.default,
+    template: "%s - Placemic",
+    default: "Placemic - Your Destination for Korean Products",
   },
   description: meta.description,
   applicationName: "Placemic",
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: meta.title.default,
-    description: meta.description,
+    title: "Placemic - Your Destination for Korean Products",
+    description: meta.description!,
     countryName: "Uzbekistan",
     siteName: "Placemic",
     alternateLocale: [""],
