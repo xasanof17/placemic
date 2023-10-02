@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Footer, Header } from "@/layouts";
 import { HeaderBottomSheet } from "@/layouts/Header/HeaderBottomSheet";
+import { meta } from "@/meta";
 
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
@@ -13,10 +14,10 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - PlaceMic",
-    default: "PlaceMic",
+    template: meta.title.template,
+    default: meta.title.default,
   },
-  description: "Товары из Кореи от производителя",
+  description: meta.description,
   applicationName: "Placemic",
   assets: `${BASE_URL}/assets`,
   classification: "My Classification",
@@ -47,10 +48,24 @@ export const metadata: Metadata = {
   ],
   keywords: ["Placemic", "Placemic in Korea", "Selling Placemic"],
   manifest: new URL(`${BASE_URL}/manifest.webmanifest`),
+  abstract: "Online shop",
+  publisher: "Vercel",
+  referrer: "origin",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     type: "website",
-    title: "Placemic",
-    description: "Товары из Кореи от производителя",
+    title: meta.title.default,
+    description: meta.description,
     countryName: "Uzbekistan",
     siteName: "Placemic",
     alternateLocale: [""],
@@ -59,15 +74,19 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${BASE_URL}/opengraph-image.png`,
-        width: 300,
-        height: 200,
+        width: 500,
+        height: 500,
       },
       {
         url: `${BASE_URL}/twitter-image.png`,
-        width: 300,
-        height: 200,
+        width: 500,
+        height: 500,
       },
     ],
+  },
+  twitter: {
+    title: "xasanof17",
+    card: "summary_large_image",
   },
 };
 

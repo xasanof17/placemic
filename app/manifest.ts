@@ -1,10 +1,11 @@
+import { meta } from "@/meta";
 import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Placemic",
+    name: meta.title.default,
     short_name: "Placemic",
-    description: "Товары из Кореи от производителя",
+    description: meta.description,
     start_url: "/",
     display: "standalone",
     background_color: "#fff",
