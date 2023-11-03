@@ -3,7 +3,7 @@ import { HeaderBottom } from "./HeaderBottom";
 
 const Header = () => {
   return (
-    <header className="sticky left-0 top-0 z-10 w-full bg-white">
+    <header className="sticky left-0 top-0 z-50 w-full bg-white">
       <nav
         role="navigation"
         className="container flex flex-col py-4 sm:space-y-6"

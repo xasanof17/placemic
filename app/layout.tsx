@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     name: "Xasanov Javohir",
     url: "https://portfoliowebapp.vercel.app",
   },
-  colorScheme: "light",
   creator: "JX Team",
   generator: "Next.js",
   alternates: {

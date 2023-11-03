@@ -4,6 +4,7 @@ import BannerSlider from "./BannerSlider";
 const Banner = () => {
   return (
     <section
+      id="banner"
       role="banner"
       className="container mb-7 mt-3 grid grid-cols-1 gap-5 lg:grid-cols-4 xl:gap-8"
     >
